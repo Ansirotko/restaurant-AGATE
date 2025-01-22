@@ -1,0 +1,35 @@
+    .social-networks {
+        margin-top: 60px;
+        &__icon {
+            font-size: 1.667rem;
+            display: inline-block;
+            &:not(:last-child) {
+                margin-right: 40px;
+            }
+            &:hover {
+                transition: .4s;
+                transform: scale(1.2);
+            }
+        }
+    }
+    
+    @media screen and (max-width: 1024px) {
+        .social-networks {
+            margin-top: 47px;
+        }
+    }
+    
+    @media screen and (max-width: 768px) {
+        .social-networks {
+            margin-top: 35px;
+        }
+    }
+    
+    @media screen and (max-width: 650px) {
+        .social-networks {
+            margin-top: 30px;
+            &__icon {
+                font-size: $base-font;
+            }
+        }
+    }

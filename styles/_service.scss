@@ -1,0 +1,25 @@
+.service {
+    font-size: 1.1667rem;
+    margin: 60px 0;
+}
+
+@media screen and (max-width: 1024px) {
+    .service {
+        font-size: $small-font;
+        margin: 50px 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .service {
+        font-size: 0.73rem;
+        margin: 40px 0;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .service {
+        font-size: $link-font;
+        margin: 30px 0;
+    }
+}

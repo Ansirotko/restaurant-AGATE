@@ -1,0 +1,48 @@
+.description {
+    padding: 100px 0;
+    background-color: $bg-color;
+    &__caption {
+        font-size: $base-font;
+        max-width: 941px;
+        margin: 0 auto;
+        line-height: 41px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .description {
+        padding: 80px 0;
+        &__caption {
+            font-size: 0.73rem;
+            max-width: 602px;
+            line-height: 30px;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .description {
+        padding: 70px 0;
+        &__caption {
+            font-size: $link-font;
+            max-width: 541px;
+            line-height: 27px;
+        }
+    }
+}
+
+@media screen and (max-width: 570px) {
+    .description {
+        &__caption {
+            max-width: 520px;
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .description {
+        &__caption {
+            max-width: 400px;
+        }
+    }
+}

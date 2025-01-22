@@ -1,0 +1,31 @@
+    .navigation {
+        padding: 44px 359px 45px 372px;
+        background-color: rgba(0, 0, 0, 0.75);
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    @media screen and (max-width: 1440px) {
+        .navigation {
+            padding: 44px 118px 45px 132px;
+        }
+    }
+    
+    @media screen and (max-width: 1024px) {
+        .navigation {
+            padding: 13px 31px 13px 42px;
+        }
+    }
+    
+    @media screen and (max-width: 768px) {
+        .navigation {
+            padding: 8px 13px 8px 24px;
+        }
+    }
+    
+    @media screen and (max-width: 615px) {
+        .navigation {
+            flex-direction: column;
+            padding: 10px 20px;
+        }
+    }

@@ -1,0 +1,23 @@
+.atmosphere {
+    display: flex;
+    justify-content: center;
+    padding: 100px 24px;
+}
+
+@media screen and (max-width: 1440px) {
+    .atmosphere {
+        padding: 100px 12px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .atmosphere {
+        padding: 80px 15px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .atmosphere {
+        padding: 70px 24px;
+    }
+}

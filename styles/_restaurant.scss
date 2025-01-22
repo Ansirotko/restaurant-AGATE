@@ -1,0 +1,43 @@
+.restaurant {
+    padding: 218px 0 185px;
+    background-color: rgba(0, 0, 0, 0.55);
+    color: $primary-color;
+    &__heading {
+        font-size: 2.83rem;
+        max-width: 914px;
+        margin: 0 auto;
+    }
+    &__caption {
+        font-size: $small-font;
+        font-weight: 400;
+        margin: 35px 0 60px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .restaurant {
+        padding: 183px 0 153px;
+        &__heading {
+            font-size: 2rem;
+            width: 697px;
+        }
+        &__caption {
+            font-size: $dish-font;
+            margin: 35px auto 63px;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .restaurant {
+        padding: 171px 0 99px;
+        &__heading {
+            font-size: 1.667rem;
+            width: 329px;
+        }
+        &__caption {
+            font-size: $dish-font;
+            margin: 35px auto 66px;
+        }
+    }
+}

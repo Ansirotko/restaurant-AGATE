@@ -1,0 +1,35 @@
+    .link {
+        display: block;
+        font-size: $link-font;
+        font-weight: 600;
+        width: 312px;
+        height: 60px;
+        line-height: 60px;
+        margin: 0 auto;
+        border-radius: 30px;
+        &:hover {
+            background-color: #FFA60D;
+            border: 2px solid #FFA60D;
+            color: $primary-color;
+            transition: .4s;
+        }
+        &--white {
+            @include link(white, $primary-color);
+            &:visited {
+                color: black;
+                border: 2px solid black;
+            }
+        }
+        &--black {
+            @include link(black, $secondary-color);
+        }
+    }
+    
+    @media screen and (max-width: 1024px) {
+        .link {
+            font-size: 0.56rem;
+            width: 248px;
+            height: 48px;
+            line-height: 48px;
+        }
+    }

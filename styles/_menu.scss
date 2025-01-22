@@ -1,0 +1,41 @@
+.menu {
+    display: flex;
+    align-items: center;
+    &__item {
+        color: $primary-color;
+        font-size: 0.73rem;
+        &:hover {
+            transform: scale(1.1);
+            transition: .4s;
+        }
+        &:not(:last-child)::after {
+            content: '|';
+            margin: 0 25px;
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .menu {
+        &__item {
+            font-size: $dish-font;
+        }
+    }
+}
+
+@media screen and (max-width: 615px) {
+    .menu {
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 470px) {
+    .menu {
+        &__item {
+            &:not(:last-child)::after {
+                content: '|';
+                margin: 0 15px;
+            }
+        }
+    }
+}

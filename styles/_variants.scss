@@ -1,0 +1,23 @@
+.variants {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 60px;
+}
+
+@media screen and (max-width: 1024px) {
+    .variants {
+        margin-bottom: 45px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .variants {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .variants {
+        align-items: center;
+    }
+}
